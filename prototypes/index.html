@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>OOP - Prototypes</title>
+		<link rel="stylesheet" href="/global.css" />
+	</head>
+	<body>
+		<h1>Object Oriented Programming</h1>
+		<h2>Prototypes</h2>
+
+		<h3>Inheritance</h3>
+		<h4>When to Use Inheritance</h4>
+		<ul>
+			<li>
+				When you have two objects with similar properties or methods
+			</li>
+			<li>When you have two objects with a parent-child relationship</li>
+			<li>Use inheritance when you have a "is-a" relationship</li>
+			<li>Use composition when you have a "has-a" relationship</li>
+			<li>Favour composition over inheritance</li>
+		</ul>
+		<strong>Types: </strong><span>Classical & Prototypical</span>
+		<p>Demonstrated with classes as an example</p>
+		<strong>Before:</strong>
+		<p>computeOptimumLocation() duplicated & maintained separately</p>
+		<div>
+			<img src="/images/prototypes-object-inheritance-before.png" />
+		</div>
+		<strong>After:</strong>
+		<p>
+			computeOptimumLocation() inherited(shared) by Circle & Square
+			objects
+		</p>
+		<div>
+			<img src="/images/prototypes-object-inheritance-after.png" />
+		</div>
+		<h3>Terminology</h3>
+		<dt>Shape</dt>
+		<dd>Parent/Super/Base class</dd>
+		<dt>Circle/Square</dt>
+		<dd>Child/Sub/Derived class</dd>
+		<dt>Relationship</dt>
+		<dd>IS-A</dd>
+
+		<h3>Prototypical Inheritance</h3>
+		<strong>Important:</strong>
+		<p>
+			When resetting the prototype, reset the protoype.constructor as
+			well.
+		</p>
+		<h3>Polymorphism</h3>
+		<ul>
+			<li>Many forms</li>
+			<li>
+				Refers to the ability of objects to share the same interface
+			</li>
+			<li>
+				Refers to the ability of objects to provide a different
+				implementation of that interface
+			</li>
+			<li>
+				Call the same method on different objects and get different
+				results
+			</li>
+		</ul>
+		<h3>Composition</h3>
+		<img src="/images/oop-composition.png" alt="oop composition" />
+		<strong>Person</strong>
+		<ul>
+			<li>canWalk</li>
+			<li>canEat</li>
+		</ul>
+		<strong>Goldfish</strong>
+		<ul>
+			<li>canSwim</li>
+			<li>canEat</li>
+		</ul>
+		<a href="/">Back to Index</a>
+		<script src="/prototypes/index.js"></script>
+	</body>
+</html>
